@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Query1</title>
+     <meta charset="UTF-8">
+     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,800,900,500i,700,600i&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+          
+          
+
+
+          <style>
+               *{
+                    padding: 0;
+                    margin: 0;
+               }
+               .container1
+               {
+                    height: 100vh;
+                    width: 100%;
+                    background: linear-gradient(180deg, #0199F9 0%, #63C1FF 100%);
+                    height: 100vh;
+               }
+               .topmenu1 img
+               {
+                    width: 100%;
+               }
+               .topmenu1
+               {
+                    top: 30px;
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 50%;
+               }
+               .questionbox
+               {
+                    position: relative;
+
+                    left: 50%;
+                    top:40%;
+                    transform: translate(-50%,-50%);
+                    width: 38.125%;
+               }
+               .question1
+               {
+                    font-family: Raleway;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 32px;
+                    line-height: 40px;
+
+                    color: #FFFFFF;
+                    margin-bottom: 20px;
+               }
+               .question1 span
+               {
+                    font-weight: 800;
+               }
+
+               
+               
+               .answer1
+               {
+                    position: relative;
+                    
+                    font-family: Nunito Sans;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 24px;
+
+                    color: #676767;
+                    
+                    margin-bottom: 55px;
+               }
+               .answer1 input
+               {
+                    
+               }
+               .ip1
+               {
+                    border-right: none;
+                    border-top: none;
+                    border-left: none;
+                    
+                    background-color: transparent;
+                    
+               }
+               ::-webkit-input-placeholder
+               {
+                    font-size: 103px;
+               }
+               ::-moz-placeholder
+               {
+                    font-size: 103px;
+               }
+               :-ms-input-placeholder
+               {
+
+                    font-size: 103px;
+               }
+               ::placeholder
+               {
+
+                    font-size: 103px;
+               }
+               
+               input[type="tel"]
+               {
+                    font-family: Raleway;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 32px;
+                    line-height: 40px;
+                    width: 100%;
+
+                    color: rgba(255, 255, 255, 0.35);
+               }
+               input::placeholder
+               {
+                    position: relative;
+                    
+                    font-family: Raleway;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 32px;
+                    line-height: 40px;
+
+                    /* identical to box height, or 125% */
+                    
+                    background-color: transparent;
+                    color: rgba(255, 255, 255, 0.35);
+               }
+               .butto1
+               {
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 100%;
+               }
+               .butto1 img
+               {
+                    width: 100%;
+                    height: 75px;
+               }
+
+
+
+               @media screen and (min-width: 900px) and (max-width: 1100px)
+               {
+                    .topmenu1
+                    {
+                         width: 60%;
+                    }
+                    .questionbox
+                    {
+                         width: 60%;
+                    }
+                    
+                    .butto1 img
+                    {
+                         height: 65px;
+                    }
+               }
+               @media screen and (min-width: 650px) and (max-width: 900px)
+               {
+                    .topmenu1
+                    {
+                         width: 70%;
+                    }
+                    .questionbox
+                    {
+                         width: 70%;
+                         top:32%;
+                    }
+                    
+                    .butto1 img
+                    {
+                         height: 50px;
+                    }
+               }
+               @media screen and (min-width: 360px) and (max-width: 650px)
+               {
+                    .topmenu1
+                    {
+                         width: 75%;
+                    }
+                    .questionbox
+                    {
+                         width: 80%;
+                         top:27%;
+                    }
+                    .butto1 img
+                    {
+                         height: 40px;
+                    }
+               }
+               @media screen and (min-width: 10px) and (max-width: 360px)
+               {
+                    .topmenu1
+                    {
+                         width: 80%;
+                    }
+                    .questionbox
+                    {
+                         width: 90%;
+                         top:24%;
+                    }
+                    .question1
+                    {
+                         
+                    }
+                    
+                    .butto1 img
+                    {
+                         height: 35px;
+                    }
+               }
+          </style>
+</head>
+<body>
+     <div class="container1">
+          <div class="topmenu1">
+               <img src="images/q1.png">
+          </div>
+          <div class="questionbox">
+               <div class="question1">
+                    What’s your <span>name</span>?
+               </div>
+               <form method="POST" id="my_form">
+
+                    <div class="answer1">
+                         <input class="ip1" type="tel" placeholder="Enter your name" id="name1">
+                    </div>
+                    
+                    
+                     
+
+
+                    <a href="query2.html">
+                         <div class="butto1">
+                              <img src="images/btn1.png">
+                         </div>
+                    </a>
+
+               </form>
+
+          </div>
+     </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
